@@ -60,16 +60,14 @@ $ sh cmd_create_weekly.sh
 ```
 
 ### 周刊创意收集
-可以在github上[创建issue](https://github.com/doraemon-home/doraemon-home.github.io/issues/new)，格式参考如下模板【用 <font color=red> ``` </font>括起来)】：
+可以在github上[创建issue](https://github.com/doraemon-home/doraemon-home.github.io/issues/new)，格式参考如下模板：
+
 ```
----
-articles:
   - title:    "今日头条推荐算法原理全文详解"
     link:     "http://36kr.com/p/5114077.html"
     comment:  "如今，算法分发已经逐步成为信息平台、搜索引擎、浏览器、社交软件等几乎所有软件的标配，但同时也开始面临各种不同的质疑、挑战与误解。2018年1月，今日头条资深算法架构师曹欢欢博士，首次公开今日头条的算法原理，以期推动整个行业问诊算法、建言算法。通过让算法透明，来消除各界对算法的误解。"
     referrer: "doraemon-master"
     tags:    ["算法", "推荐算法"]
----
 ```
 
 
