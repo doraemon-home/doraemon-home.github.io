@@ -8,7 +8,7 @@ doraemon 团队 GitHub 官方首页。
 
 ## 我想给周刊投稿
 
-* [投稿前必读](https://github.com/doraemon-home/weekly#投稿)
+* [投稿前必读](https://github.com/doraemon-home/doraemon-home.github.io#周刊创意收集)
 * [投稿快捷通道](https://github.com/doraemon-home/weekly/issues)
 
 ## 安装
@@ -60,8 +60,7 @@ $ sh cmd_create_weekly.sh
 ```
 
 ### 周刊创意收集
-可以在github上[创建issue](https://github.com/doraemon-home/doraemon-home.github.io/issues/new)，格式参考如下模板：
-
+可以在github上[创建issue](https://github.com/doraemon-home/doraemon-home.github.io/issues/new)，格式参考如下模板【用 <font color=red> ``` </font>括起来)】：
 ```
 ---
 articles:
@@ -72,6 +71,7 @@ articles:
     tags:    ["算法", "推荐算法"]
 ---
 ```
+
 
 ### 编辑周刊
 
