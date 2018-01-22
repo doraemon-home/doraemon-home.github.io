@@ -9,7 +9,6 @@ doraemon 团队 GitHub 官方首页。
 ## 我想给周刊投稿
 
 * [投稿前必读](https://github.com/doraemon-home/doraemon-home.github.io#周刊创意收集)
-* [投稿快捷通道](https://github.com/doraemon-home/weekly/issues)
 
 ## 安装
 
