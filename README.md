@@ -9,6 +9,7 @@ doraemon 团队 GitHub 官方首页。
 ## 我想给周刊投稿
 
 * [投稿前必读](https://github.com/doraemon-home/doraemon-home.github.io#周刊创意收集)
+* [加入我们](https://github.com/orgs/doraemon-home/teams/doraemon-master/members)
 
 ## 安装
 
@@ -68,7 +69,6 @@ $ sh cmd_create_weekly.sh
     referrer: "doraemon-master"
     tags:    ["算法", "推荐算法"]
 ```
-
 
 ### 编辑周刊
 
