@@ -1,0 +1,95 @@
+---
+layout: page
+title: 首页 | doraemon-home
+type: index
+---
+<div class="article warning">
+  我们是哆啦A梦家族，在这里准备了各种道具，来帮助小伙伴们化解身边的种种困难问题。</a>。
+</div>
+<div class="page-title">
+  <a href="/weekly/">周刊</a>
+</div>
+{% assign sorted_weekly = site.weekly | reverse %}
+{% for weekly in sorted_weekly limit:3 %}
+<div class="article">
+  <div class="article-item">
+    <div class="article-date">
+      {{ weekly.date | date: "%Y/%m/%d" }}
+    </div>
+    <div class="article-title">
+      <a href="{{ site.baseurl }}{{ weekly.url }}">
+        业内技术周刊
+      </a>
+    </div>
+    <div class="article-comment">
+      <ul>
+      {% for item in weekly.articles %}
+        <li><a href="{{ item.link }}" target="_blank">{{ item.title }}</a></li>
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+{% endfor %}
+<div class="page-title">
+  <a href="/blog/">博客</a>
+</div>
+{% for post in site.posts limit:3 %}
+<div class="article">
+  <div class="article-item">
+    <div class="article-date">
+      {{ post.date | date: "%Y/%m/%d" }}
+    </div>
+    <div class="article-title">
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
+    </div>
+    <div class="article-main">
+      {{ post.excerpt }}
+    </div>
+  </div>
+</div>
+{% endfor %}
+<div class="page-title">
+  <a href="/project/">项目</a>
+</div>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+{% for project in site.data.project %}
+<div class="article">
+  <div class="article-item">
+    <div class="article-star">
+      <a class="github-button"
+         href="https://github.com/{{ project.repo }}"
+         data-icon="octicon-star"
+         data-count-href="/{{ project.repo }}/stargazers"
+         data-count-api="/repos/{{ project.repo }}#stargazers_count"
+         data-count-aria-label="# stargazers on GitHub"
+         aria-label="Star {{ project.repo }} on GitHub">Star</a>
+    </div>
+    <div class="article-title">
+      <a href="{{ project.link }}">{{ project.name }}</a>
+    </div>
+    <div class="article-main">
+      {{ project.intro }}
+    </div>
+  </div>
+</div>
+{% endfor %}
+<div class="page-title">
+  <a href="/share/">分享</a>
+</div>
+{% assign sorted_share = site.data.share | reverse %}
+{% for share in sorted_share limit:3 %}
+<div class="article">
+  <div class="article-item">
+    <div class="article-date">
+      {{ share.date }}
+    </div>
+    <div class="article-title">
+      <a href="{{ share.link }}" target="_blank">{{ share.title }}</a>
+    </div>
+    <div class="article-comment">
+      分享人: {{ share.person }}
+    </div>
+  </div>
+</div>
+{% endfor %}

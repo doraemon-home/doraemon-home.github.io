@@ -1,0 +1,30 @@
+---
+layout: page
+title: 项目 |  doraemon-home
+type: project
+---
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<div class="page-title">
+  项目
+</div>
+{% for project in site.data.project %}
+<div class="article">
+  <div class="article-item">
+    <div class="article-star">
+      <a class="github-button"
+         href="https://github.com/{{ project.repo }}"
+         data-icon="octicon-star"
+         data-count-href="/{{ project.repo }}/stargazers"
+         data-count-api="/repos/{{ project.repo }}#stargazers_count"
+         data-count-aria-label="# stargazers on GitHub"
+         aria-label="Star {{ project.repo }} on GitHub">Star</a>
+    </div>
+    <div class="article-title">
+      <a href="{{ project.link }}">{{ project.name }}</a>
+    </div>
+    <div class="article-comment">
+      {{ project.intro }}
+    </div>
+  </div>
+</div>
+{% endfor %}

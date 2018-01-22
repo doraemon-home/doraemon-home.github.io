@@ -1,0 +1,26 @@
+baseurl: ""
+collections:
+  weekly:
+    output: true
+  newsletter:
+    output: true
+defaults:
+  - scope:
+      path: ""
+      type: weekly
+    values:
+      layout: weekly
+      title: doraemon-home 技术周刊
+      head: doraemon-home 技术周刊
+  - scope:
+      path: ""
+      type: newsletter
+    values:
+      layout: weekly-email
+      title: doraemon-home 技术周刊
+      head: doraemon-home 技术周刊
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md

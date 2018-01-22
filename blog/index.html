@@ -1,0 +1,26 @@
+---
+layout: page
+title: 博客 |  doraemon-home
+head: doraemon-home blog
+type: blog
+---
+<div class="page-title">
+  博客
+</div>
+{% for post in site.posts %}
+  {% if post.layout == "blog" %}
+<div class="article">
+  <div class="article-item">
+    <div class="article-date">
+      {{ post.date | date: "%Y/%m/%d" }}
+    </div>
+    <div class="article-title">
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
+    </div>
+    <div class="article-main">
+      {{ post.excerpt }}
+    </div>
+  </div>
+</div>
+  {% endif %}
+{% endfor %}

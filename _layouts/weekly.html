@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<div class="page-title">
+doraemon-home 技术周刊
+</div>
+<div class="page-date">
+{{ page.date | date:"%Y/%m/%d" }}
+</div>
+{% for article in page.articles %}
+<div id="A{{ forloop.index }}" class="article">
+  <div class="article-title">
+    <span{% if article.original == true %} title="原创" class="article-original"{% endif %}>
+    {% if article.original == true %}
+      <i class="fa fa-bookmark"></i>
+    {% else %}
+      <i class="fa fa-retweet"></i>
+    {% endif %}
+      <a href="{{ article.link}}" target="_blank">{{ article.title }}</a>
+    </span>
+    <span class="article-share">
+      <a href="#A{{ forloop.index }}">
+        <i class="fa fa-paragraph"></i>
+      </a>
+    </span>
+  </div>
+  <div class="article-tags">
+    {% for tag in article.tags %}
+      <div class="tag-item">{{ tag }}</div>
+    {% endfor %}
+  </div>
+  {% if article.comment %}
+    <div class="article-comment">
+      {{ article.comment }}
+    </div>
+  {% endif %}
+</div>
+{% endfor %}
+<div class="hidden-newsletter"><a href="{{ site.baseurl }}/newsletter/{{ page.date | date:"%Y-%m-%d" }}-weekly.html">Newsletter</a></div>

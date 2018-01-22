@@ -1,0 +1,35 @@
+---
+layout: page
+title: 关于 | doraemon-home
+type: about
+permalink: /about/
+---
+
+<div class="page-title">
+  关于我们
+</div>
+<div class="article info">
+  我们是 doraemon-master!
+</div>
+<div class="page-title">
+  我们的成员
+</div>
+{% for member in site.data.members %}
+<div class="article">
+  <div class="article-icon">
+    {% if member.homepage %}
+    <a href="{{ member.homepage }}" target="_blank">
+      <i class="fa fa-globe" aria-hidden="true"></i>
+    </a>
+    {% endif %}
+    {% if member.github %}
+    <a href="https://github.com/{{ member.github }}" target="_blank">
+      <i class="fa fa-github" aria-hidden="true"></i>
+    </a>
+    {% endif %}
+  </div>
+  <div class="article-title">
+    {{ member.name }}
+  </div>
+</div>
+{% endfor %}
