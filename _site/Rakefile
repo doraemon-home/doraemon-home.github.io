@@ -9,6 +9,7 @@ require "spacifier"
 require "terminal-table"
 # require "wunderlist"
 
+
 Dir.glob('rake/**.rake').each do |f|
   import f
 end
@@ -19,6 +20,10 @@ end
 
 def show_info(message)
   puts "[INFO] #{message}".green
+end
+
+def show_fatal(message)
+  puts "[INFO] #{message}".red
 end
 
 def show_message_on_article(level, message, article, highlight_item)

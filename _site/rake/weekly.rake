@@ -99,7 +99,11 @@ def create_weekly(weekly_date, weekly_content)
   email_file = "_newsletter/#{weekly_date}-weekly.md"
   email_content = "---\ndatasrc: #{weekly_date}-weekly\n---"
 
-  File.new(html_file, "w").syswrite(weekly_content)
+  if File::exists?( html_file  ) then
+    show_fatal("file #{html_file} has been created.")
+    exit 1
+  end
+  File.new(html_file, "w").syswrite(weekly_content) 
   File.new(email_file, "w").syswrite(email_content)
 
   show_info("#{html_file} is created.")
