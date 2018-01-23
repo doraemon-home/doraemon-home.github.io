@@ -24,7 +24,7 @@ doraemon 团队 GitHub 官方首页。
     ```
     $ bundle install
     ```
-> 需安装bundle，`gem install bundler`
+> 需安装bundle，`sudo gem install bundler`
 
 3. 本地运行
 

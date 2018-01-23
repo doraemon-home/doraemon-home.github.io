@@ -1,5 +1,3 @@
-script:
-  - "bundle exec rake test-weekly"
 language: ruby
 cache: bundler
 rvm:
