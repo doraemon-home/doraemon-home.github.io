@@ -9,9 +9,9 @@ namespace :weekly do
 ---
 articles:
   - title:    "Your Awesome Article Title"
-    link:     "https://msbu-tech.github.io/"
+    link:     "https://doraemon-home.github.io/"
     comment:  "The reason why you recommend this article."
-    referrer: "Your Name"
+    referrer: "doraemon-master"
     tags:    ["tag"]
 ---
     EOF
@@ -100,7 +100,7 @@ def create_weekly(weekly_date, weekly_content)
   email_content = "---\ndatasrc: #{weekly_date}-weekly\n---"
 
   if File::exists?( html_file  ) then
-    show_fatal("file #{html_file} has been created.")
+    show_fatal("weekly #{html_file} has been created.")
     exit 1
   end
   File.new(html_file, "w").syswrite(weekly_content) 
@@ -191,7 +191,7 @@ def say_thanks_and_close_issue(weekly_date)
   url = weekly_url(weekly_date)
   comment = <<-EOS
 :fireworks:Congratulations!
-:scroll:MSBU Weekly #{weekly_date} is published on <#{url}>.
+:scroll:doraemon Weekly #{weekly_date} is published on <#{url}>.
 :thumbsup:Thanks #{contributors_list.join ', '} for your great contributions!
   EOS
   # say thanks
@@ -207,8 +207,8 @@ end
 def open_issue(weekly_date)
   client = Octokit::Client.new(:access_token => get_access_token)
   content = <<-EOS
-:loud_sound:MSBU Weekly #{weekly_date} is now in collecting.
-Post your entry following the instruction of <https://github.com/msbu-tech/weekly#投稿>.
+:loud_sound:doraemon Weekly #{weekly_date} is now in collecting.
+Post your entry following the instruction of <https://github.com/doraemon-tech/weekly#投稿>.
   EOS
   client.create_issue(get_weekly_repo, get_issue_name(weekly_date), content)
 
@@ -228,7 +228,7 @@ def find_issue_link
 end
 
 def weekly_url(weekly_date)
-  "https://msbu-tech.github.io/weekly/#{weekly_date}-weekly.html"
+  "https://doraemon-home.github.io/weekly/#{weekly_date}-weekly.html"
 end
 
 def complete_wunderlist(weekly_date)
@@ -240,8 +240,8 @@ def complete_wunderlist(weekly_date)
   tasks = wl.tasks(["🗑Working"])
   url = weekly_url(weekly_date)
   tasks.each do |t|
-    if t.title.eql?("MSBU Tech Weekly") && weekly_date.eql?(t.due_date)
-      t.note.content = "MSBU Weekly #{weekly_date} is published on <#{url}>."
+    if t.title.eql?("doraemon Weekly") && weekly_date.eql?(t.due_date)
+      t.note.content = "doraemon Weekly #{weekly_date} is published on <#{url}>."
       t.completed = true
       t.save
       show_info("Completing wunderlist task...")

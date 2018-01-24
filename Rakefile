@@ -80,5 +80,5 @@ def get_access_token
 end
 
 def get_weekly_repo
-  "msbu-tech/weekly".freeze
+  "doraemon-home/weekly".freeze
 end
