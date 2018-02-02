@@ -31,12 +31,6 @@ doraemon 团队 GitHub 官方首页。
     ```
     $ rake serve
     ```
-    或者
-
-    ```
-    $ sh cmd_preview.sh
-    ```
-
     在 `http://localhost:4000` 进行预览。
 
 ## 对于编辑人员
@@ -63,11 +57,6 @@ _weekly/
 
 ```
 $ rake weekly:create
-```
-或者
-
-```
-$ sh cmd_create_weekly.sh
 ```
 
 ### 周刊创意收集
