@@ -29,6 +29,11 @@ doraemon 团队 GitHub 官方首页。
 3. 本地运行
 
     ```
+    $ rake serve
+    ```
+    或者
+
+    ```
     $ sh cmd_preview.sh
     ```
 
@@ -55,6 +60,11 @@ _weekly/
 
 可自行根据格式创建博客或者周刊。  
 `shell`下执行文件`cmd_create_weekly.sh`会在目录`_weekly`下自动创建一个周刊文件如`2018-01-22-weekly.md`，
+
+```
+$ rake weekly:create
+```
+或者
 
 ```
 $ sh cmd_create_weekly.sh
