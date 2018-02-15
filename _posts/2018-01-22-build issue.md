@@ -2,7 +2,7 @@
 layout: blog
 title: 恭贺建刊
 type: blog
-author: doraemon-master
+author: leunggeorge
 tags:
 - 公告
 - 建刊
