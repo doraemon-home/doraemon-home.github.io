@@ -8,4 +8,4 @@ tags:
 - 
 ---
 喜迎戊戌狗年，恭祝新年快乐^_^  
-[![厂长送祝福](http://leunggeorge.github.io/src_img/new-year/xin-nian-zu-fu.png "厂长送祝福")](https://eopa.baidu.com/page/RV-gFZw4Ct7?idfrom=share)
+[![厂长送祝福](https://leunggeorge.github.io/src_img/new-year/xin-nian-zu-fu.png "厂长送祝福")](https://eopa.baidu.com/page/RV-gFZw4Ct7?idfrom=share)
