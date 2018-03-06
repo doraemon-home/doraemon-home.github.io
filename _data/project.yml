@@ -3,3 +3,8 @@
   repo:  "doraemon-home/doraemon-home.github.io"
   intro: "这里准备了各种道具，来帮助小伙伴们化解身边的种种困难问题。"
 
+- name:  "blockchain"
+  link:  "https://github.com/dvf/blockchain"
+  repo:  "dvf/blockchain"
+  intro: "Learn Blockchains by Building One"
+
