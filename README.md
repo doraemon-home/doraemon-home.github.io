@@ -53,7 +53,7 @@ _weekly/
 ### 创建周刊
 
 可自行根据格式创建博客或者周刊。  
-`shell`下执行文件`cmd_create_weekly.sh`会在目录`_weekly`下自动创建一个周刊文件如`2018-01-22-weekly.md`，
+执行如下命令，会自动在目录`_weekly`下自动创建一个周刊文件如`2018-01-22-weekly.md`，
 
 ```
 $ rake weekly:create
