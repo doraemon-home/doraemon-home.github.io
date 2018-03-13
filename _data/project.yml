@@ -8,3 +8,8 @@
   repo:  "dvf/blockchain"
   intro: "Learn Blockchains by Building One"
 
+- name:  "pyenv"
+  link:  "https://github.com/pyenv/pyenv"
+  repo:  "pyenv/pyenv"
+  intro: "Python版本管理工具"
+
