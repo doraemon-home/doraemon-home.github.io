@@ -16,20 +16,20 @@ doraemon 团队 GitHub 官方首页。
 1. Clone
 
     ```
-    $ git clone https://github.com/doraemon-home/doraemon-home.github.io.git
+    git clone https://github.com/doraemon-home/doraemon-home.github.io.git
     ```
 
 2. 初始化 Bundler
 
     ```
-    $ bundle install
+    bundle install
     ```
 > 需安装bundle，`sudo gem install bundler`
 
 3. 本地运行
 
     ```
-    $ rake serve
+    rake serve
     ```
     在 `http://localhost:4000` 进行预览。
 
@@ -53,10 +53,10 @@ _weekly/
 ### 创建周刊
 
 可自行根据格式创建博客或者周刊。  
-执行如下命令，会自动在目录`_weekly`下自动创建一个周刊文件如`2018-01-22-weekly.md`，
+执行如下命令，会自动在目录`_weekly`下自动创建一个周刊文件（以当天日期前缀）如`2018-01-22-weekly.md`，
 
 ```
-$ rake weekly:create
+rake weekly:create
 ```
 
 ### 周刊创意收集
