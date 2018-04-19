@@ -13,3 +13,13 @@
   repo:  "pyenv/pyenv"
   intro: "Python版本管理工具"
 
+- name:  "avue"
+  link:  "https://github.com/nmxiaowei/avue"
+  repo:  "nmxiaowei/avue"
+  intro: "基于json可配置化去开发界面，节约开发成本和提高开发效率"
+
+- name:  "doraemon"
+  link:  "https://github.com/TesterlifeRaymond/doraemon"
+  repo:  "TesterlifeRaymond/doraemon"
+  intro: "接口自动化测试工具"
+
