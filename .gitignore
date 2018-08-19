@@ -3,3 +3,4 @@ gh-pages/
 Gemfile.lock
 vendor/
 .bundle/
+.DS_Store
