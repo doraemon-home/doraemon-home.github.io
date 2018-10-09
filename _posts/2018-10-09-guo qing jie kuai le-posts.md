@@ -6,4 +6,4 @@ author: doraemon-master
 tags:
 - 国庆节
 ---
-![](https://github.com/doraemon-home/doraemon-home.github.io/raw/master/assets/images/msbu-funeral.png)
+![](https://github.com/doraemon-home/doraemon-home.github.io/blob/master/assets/images/guoqingjie.jpg?raw=true)
